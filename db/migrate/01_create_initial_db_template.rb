@@ -8,11 +8,11 @@ class CreateInitialDbTemplate < ActiveRecord::Migration
       t.timestamps
     end
 
-    #create_table :workout_plans do |t|
-    #  t.integer :user_id
-    #  t.string :name
-    #  t.timestamps
-    #end
+    create_table :workout_programmes do |t|
+      t.integer :user_id
+      t.string :name
+      t.timestamps
+    end
 
     #create_table :weigh_ins do |t|
     #  t.string :weight, null: false

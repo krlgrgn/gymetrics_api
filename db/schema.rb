@@ -22,4 +22,11 @@ ActiveRecord::Schema.define(version: 1) do
     t.datetime "updated_at"
   end
 
+  create_table "workout_programmes", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
 end
